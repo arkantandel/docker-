@@ -2,17 +2,11 @@
 
 ## Docker • Prometheus • Grafana • Nginx • Redis • Node.js
 
-![banner](images/banner-devops.png)
-
----
-
-# 👨‍💻 DevOps Engineer
-
 **Arkan Tandel**
 
 🔗 LinkedIn: https://www.linkedin.com/in/arkan-tandel
-🔗 GitHub: https://github.com/yourusername
-🔗 Portfolio: https://yourportfolio.com
+🔗 GitHub: https://github.com/arkantandel
+
 
 ---
 
@@ -259,50 +253,8 @@ This project can be deployed on:
 
 ---
 
-# 🚀 FUTURE IMPROVEMENTS
 
-* CI/CD pipeline
-* Kubernetes
-* Alertmanager
-* Slack alerts
-* Terraform infra
 
----
 
-# 💼 RESUME DESCRIPTION
 
-**DevOps Monitoring Stack Deployment**
-
-Deployed a containerized microservice monitoring system using Docker, Prometheus, and Grafana to visualize real-time performance metrics and improve system observability.
-
----
-
-# 🧑‍💻 INTERVIEW QUESTIONS
-
-**Q:** How does Prometheus collect metrics?
-**A:** It scrapes metrics endpoint `/metrics`.
-
-**Q:** Why Grafana?
-**A:** Visualization of metrics.
-
-**Q:** What is rate() query?
-**A:** Calculates per-second request rate.
-
----
-
-# ⭐ STAR THIS REPO
-
-If this helped you, star ⭐ the repo.
-
----
-
-# 🔗 CONNECT
-
-LinkedIn
-https://www.linkedin.com/in/arkan-tandel
-
-GitHub
-https://github.com/yourusername
-
----
 
