@@ -1,92 +1,77 @@
-# 🚀 ENTERPRISE DEVOPS MONITORING PLATFORM
+<!-- ================== TOP BANNER ================== -->
 
-## Docker • Prometheus • Grafana • Nginx • Redis • Node.js
-
-**Arkan Tandel**
-
-🔗 LinkedIn: https://www.linkedin.com/in/arkan-tandel
-🔗 GitHub: https://github.com/arkantandel
-
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:2c5364,100:00c6ff&height=260&section=header&text=Docker%20DevOps%20Monitoring%20Project&fontSize=42&fontColor=ffffff&animation=fadeIn"/>
+</p>
 
 ---
 
-# 🌍 PROJECT OVERVIEW
+# 🐳 Docker DevOps Monitoring Project
 
-This project demonstrates a **production-grade DevOps monitoring stack** built using containerized microservices.
+### Prometheus • Grafana • Nginx • Node.js
 
-It simulates how modern companies monitor:
-
-* Application traffic
-* Performance
-* Metrics
-* CPU usage
-* Request rate
-* System health
-
-All deployed using **Docker Compose** with full observability.
+<h3 align="center">Production-Style Containerized Monitoring Architecture</h3>
 
 ---
 
-# 🎯 OBJECTIVE
-
-Build a complete monitoring system that can:
-
-* Track backend API requests
-* Visualize metrics in Grafana
-* Scrape metrics using Prometheus
-* Handle traffic with Nginx
-* Use Redis for caching
-* Run everything in Docker
+<p align="center">
+<img src="https://img.shields.io/badge/Docker-Containerized-blue?style=for-the-badge&logo=docker"/>
+<img src="https://img.shields.io/badge/Prometheus-Monitoring-orange?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Grafana-Dashboard-red?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/DevOps-Architecture-green?style=for-the-badge"/>
+</p>
 
 ---
 
-# 🧱 ENTERPRISE ARCHITECTURE
+# 🌟 Project Overview
+
+This project demonstrates how DevOps engineers deploy and monitor containerized applications using Docker.
+We simulate a real-world production setup where an application runs inside containers and its metrics are collected and visualized.
+
+This project includes:
+
+* Containerized backend application
+* Reverse proxy using Nginx
+* Metrics collection using Prometheus
+* Visualization using Grafana
+
+---
+
+# 🧠 What You Will Learn
+
+* Docker containerization
+* Multi-container architecture
+* Monitoring and observability
+* Prometheus metrics scraping
+* Grafana dashboards
+* DevOps workflow
+
+---
+
+# 🏗️ Architecture
 
 ```mermaid
-flowchart TB
-    user[👤 User Browser]
-    nginx[🌐 Nginx Proxy]
-    backend[⚙️ Node Backend]
-    redis[(🧠 Redis Cache)]
-    prom[📊 Prometheus]
-    grafana[📈 Grafana]
-    devops[👨‍💻 DevOps]
-
-    user --> nginx
-    nginx --> backend
-    backend --> redis
-    backend -->|metrics| prom
-    prom --> grafana
-    grafana --> devops
+flowchart LR
+    User --> Nginx
+    Nginx --> Backend
+    Backend --> Prometheus
+    Prometheus --> Grafana
 ```
 
 ---
 
-# 🧠 HOW SYSTEM WORKS
-
-1. User sends request
-2. Nginx forwards request
-3. Backend processes request
-4. Metrics generated
-5. Prometheus scrapes metrics
-6. Grafana visualizes metrics
-
----
-
-# 🏗️ REAL PRODUCTION FLOW
+# 🔄 Request Flow
 
 ```mermaid
 sequenceDiagram
     participant User
     participant Nginx
     participant Backend
-    participant Redis
     participant Prometheus
     participant Grafana
 
-    User->>Nginx: HTTP Request
+    User->>Nginx: Request
     Nginx->>Backend: Forward
-    Backend->>Redis: Cache Check
     Backend->>Prometheus: Metrics
     Prometheus->>Grafana: Data
     Grafana->>DevOps: Dashboard
@@ -94,167 +79,148 @@ sequenceDiagram
 
 ---
 
-# 📁 PROJECT STRUCTURE
+# 📁 Project Structure
 
 ```
-devops-monitoring-project
-│
-├── backend
-│   ├── app.js
-│   ├── package.json
-│   ├── Dockerfile
-│
-├── nginx
-│   └── nginx.conf
-│
-├── prometheus
-│   └── prometheus.yml
+docker-devops-project/
 │
 ├── docker-compose.yml
+│
+├── backend/
+│   ├── app.js
+│   ├── package.json
+│   └── Dockerfile
+│
+├── nginx/
+│   └── nginx.conf
+│
+├── prometheus/
+│   └── prometheus.yml
+│
 └── README.md
 ```
 
 ---
 
-# ⚙️ COMPLETE SETUP
+# 🚀 Step-by-Step Creation
 
-## Step 1 — Clone
+## 1️⃣ Create Project Folder
 
 ```bash
-git clone https://github.com/yourusername/devops-monitoring-project
-cd devops-monitoring-project
+mkdir docker-devops-project
+cd docker-devops-project
 ```
 
-## Step 2 — Start Project
+## 2️⃣ Create Folders
+
+```bash
+mkdir backend nginx prometheus
+touch docker-compose.yml
+```
+
+---
+
+## 3️⃣ Backend Setup
+
+```bash
+cd backend
+nano app.js
+```
+
+Paste backend code.
+
+Create package file:
+
+```bash
+nano package.json
+```
+
+Create Dockerfile:
+
+```bash
+nano Dockerfile
+```
+
+---
+
+## 4️⃣ Nginx Setup
+
+```bash
+cd ../nginx
+nano nginx.conf
+```
+
+---
+
+## 5️⃣ Prometheus Setup
+
+```bash
+cd ../prometheus
+nano prometheus.yml
+```
+
+---
+
+## 6️⃣ Docker Compose
+
+```bash
+cd ..
+nano docker-compose.yml
+```
+
+---
+
+# ▶️ Run Project
 
 ```bash
 docker compose up -d --build
 ```
 
-## Step 3 — Check Containers
-
-```bash
-docker ps
-```
-
 ---
 
-# 🌐 ACCESS SERVICES
+# 🌐 Access Services
 
 | Service     | URL                   |
 | ----------- | --------------------- |
-| Grafana     | http://SERVER-IP:3000 |
+| Application | http://SERVER-IP      |
 | Prometheus  | http://SERVER-IP:9090 |
-| Backend API | http://SERVER-IP/api  |
+| Grafana     | http://SERVER-IP:3000 |
 
----
-
-# 📊 PROMETHEUS TEST
-
-Open:
+Grafana login:
 
 ```
-http://SERVER-IP:9090
-```
-
-Query:
-
-```
-http_requests_total
+admin / admin
 ```
 
 ---
 
-# 📈 GRAFANA METRICS
-
-### Request Rate
+# 📊 Grafana Query
 
 ```
 rate(http_requests_total[1m])
 ```
 
-### Total Requests
-
-```
-http_requests_total
-```
-
-### CPU Usage
-
-```
-process_cpu_seconds_total
-```
-
 ---
 
-# 🧪 GENERATE TRAFFIC
-
-Run:
+# 🧪 Generate Traffic
 
 ```bash
-for i in {1..500}; do curl http://SERVER-IP/api?name=test; done
+for i in {1..200}; do curl http://localhost/api; done
 ```
 
-Graph will increase 📈
+
+# 👨‍💻 Author
+
+**Arkan Tandel**
+DevOps Engineer 🚀
+
+LinkedIn: https://www.linkedin.com/in/arkan-tandel
+GitHub: https://github.com/arkantandel
 
 ---
 
-# 🖼️ DASHBOARD IMAGES
+<!-- ================== FOOTER ================== -->
 
-Add screenshots here:
-
-```
-images/grafana-dashboard.png
-images/prometheus.png
-images/docker.png
-```
-
----
-
-# 🧠 WHAT YOU LEARN
-
-✔ Docker networking
-✔ Monitoring stack
-✔ Observability
-✔ Metrics scraping
-✔ Reverse proxy
-✔ Production architecture
-
----
-
-# 🔥 ADVANCED DEVOPS DIAGRAM
-
-```mermaid
-graph TD
-    A[Client]
-    B[Load Balancer]
-    C[Container Cluster]
-    D[Metrics Layer]
-    E[Visualization]
-    F[DevOps]
-
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-```
-
----
-
-# ☁️ CLOUD READY VERSION
-
-This project can be deployed on:
-
-* AWS EC2
-* Kubernetes
-* EKS
-* Docker Swarm
-
----
-
-
-
-
-
-
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00c6ff,50:2c5364,100:0f2027&height=120&section=footer"/>
+</p>
