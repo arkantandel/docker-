@@ -25,6 +25,58 @@
 
 # 🌟 Project Overview
 
+This project demonstrates how DevOps engineers deploy and monitor containerized applications using Docker.  
+We simulate a real-world production setup where an application runs inside containers and its metrics are collected and visualized.
+
+This project includes:
+
+* Containerized backend application  
+* Reverse proxy using Nginx  
+* Metrics collection using Prometheus  
+* Visualization using Grafana  
+
+---
+
+# 🧠 What You Will Learn
+
+* Docker containerization  
+* Multi-container architecture  
+* Monitoring and observability  
+* Prometheus metrics scraping  
+* Grafana dashboards  
+* DevOps workflow  
+
+---
+
+# 🏗️ Architecture
+
+```mermaid
+flowchart LR
+    User --> Nginx
+    Nginx --> Backend
+    Backend --> Prometheus
+    Prometheus --> Grafana
+
+
+# 🐳 Docker DevOps Monitoring Project
+
+### Prometheus • Grafana • Nginx • Node.js
+
+<h3 align="center">Production-Style Containerized Monitoring Architecture</h3>
+
+---
+
+<p align="center">
+<img src="https://img.shields.io/badge/Docker-Containerized-blue?style=for-the-badge&logo=docker"/>
+<img src="https://img.shields.io/badge/Prometheus-Monitoring-orange?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Grafana-Dashboard-red?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/DevOps-Architecture-green?style=for-the-badge"/>
+</p>
+
+---
+
+# 🌟 Project Overview
+
 This project demonstrates how DevOps engineers deploy and monitor containerized applications using Docker.
 We simulate a real-world production setup where an application runs inside containers and its metrics are collected and visualized.
 
