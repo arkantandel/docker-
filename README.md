@@ -50,6 +50,7 @@ flowchart LR
     Backend --> Prometheus
     Prometheus --> Grafana
 
+```
 
 # 🐳 Docker DevOps Monitoring Project
 
