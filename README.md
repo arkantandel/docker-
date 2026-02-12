@@ -28,23 +28,16 @@
 This project demonstrates how DevOps engineers deploy and monitor containerized applications using Docker.  
 We simulate a real-world production setup where an application runs inside containers and its metrics are collected and visualized.
 
-This project includes:
-
-* Containerized backend application  
-* Reverse proxy using Nginx  
-* Metrics collection using Prometheus  
-* Visualization using Grafana  
-
 ---
 
 # 🧠 What You Will Learn
 
-* Docker containerization  
-* Multi-container architecture  
-* Monitoring and observability  
-* Prometheus metrics scraping  
-* Grafana dashboards  
-* DevOps workflow  
+- Docker containerization  
+- Multi-container architecture  
+- Monitoring and observability  
+- Prometheus metrics scraping  
+- Grafana dashboards  
+- DevOps workflow  
 
 ---
 
